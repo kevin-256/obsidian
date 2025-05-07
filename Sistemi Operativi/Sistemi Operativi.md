@@ -59,9 +59,8 @@ Tecnica utilizzata dai sistemi operativi multiprogrammati:
 - il tempo della CPU è suddivisa tra più job
 - i context switch fanno credere all'utente di utilizzare un sistema di calcolo dedicato solamente a lui
 Consideriamo tre job P1, P2 e P3 che utilizzano sia la CPU ma eseguono anche operazioni di I/O.
-[[./Images/Pasted image 20250507165000.png]]
 
-
+![](Github-repo/Sistemi%20Operativi/Images/ExecutionTypes.png)
 #### Processo (Job)
 Un **processo** è un'attività unitaria di elaborazione, caratterizzata da un singolo **flusso sequenziale di esecuzione**, uno **stato corrente** ed una collezione di **risorse** assegnate dal sistema.
 
