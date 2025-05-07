@@ -59,9 +59,16 @@ Tecnica utilizzata dai sistemi operativi multiprogrammati:
 - il tempo della CPU è suddivisa tra più job
 - i context switch fanno credere all'utente di utilizzare un sistema di calcolo dedicato solamente a lui
 Consideriamo tre job P1, P2 e P3 che utilizzano sia la CPU ma eseguono anche operazioni di I/O.
-![[Pasted image 20250507165000.png]]
+![[./Images/Pasted image 20250507165000.png]]
 
-#### Processo
-Un programma in memoria predisposto all'esecuzione è chiamato **processo**
+
+#### Processo (Job)
+Un **processo** è un'attività unitaria di elaborazione, caratterizzata da un singolo **flusso sequenziale di esecuzione**, uno **stato corrente** ed una collezione di **risorse** assegnate dal sistema.
+
 - ogni utente può avere anche più di un processo contemporaneamente in memoria centrale
-- alcuni processi posso
+- quando la memoria centrale non è sufficiente, alcuni processi vengono spostati sulla memoria di massa:
+	- job pool, contenente processi che stanno eseguendo e i processi pronti all'esecuzione, ogni processo è visto come un blocco unico (non più utilizzata)
+	- swap, contentente parti di processi non più utilizzate chiamate pagine, ogni processo è suddiviso in pagine e alcune possono stare in memoria centrale e alcune in memoria di massa
+- Il sistema operativo sceglie quali processi caricare in memoria centrale (**job scheduling**)
+- il sistema operativo sceglie quale processo eseguire in memoria centrale (**CPU scheduling**)
+- il 
