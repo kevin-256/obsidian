@@ -90,6 +90,7 @@ Questo porta a tre punti:
 - Stabilità: isolando i programmi il kernel può gestire le risorse e terminare e pulire i programmi malfunzionantireddi
 - compatibilità: il kernel fornisce API stabili per i programmi (per esempio la funzione```CreateFile```), può cambiare il modo in cui la funzione agisce under the hood, senza che il programma lo noti
 Con questo proposito vengono introdotte due modalità di funzionamento, **user mode** e **kernel mode**
+Per il corretto funzionamento delle due modalità è necessario che nella CPU sia presente un bit che abiliti o meno l'esecuzione delle istruzioni privilegiate.
 
 | User-Mode                                                                                                             | Kernel-Mode                                                                                                                                                                                                          |
 | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -98,8 +99,28 @@ Con questo proposito vengono introdotte due modalità di funzionamento, **user m
 | Un programma in esecuzione in user mode non ha accesso ai dati del sistema operativo (memory, storage, devices...)    | Un programma o driver in kernel mode ha accesso a tutta la memoria quindi se scrivesse su un indirizzo di memoria sbagliato potrebbe compromettere la memoria del sistema operativo o di un altro programma o driver |
 
 
-Qui possiamo vedere la differenza in un'immagine dalla [guida della Microsoft]([User Mode and Kernel Mode - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode))
+Qui possiamo vedere la differenza in un'immagine dalla [guida della Microsoft](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode))
 
 ![](Images/UserMode_vs_KernelMode.png)
 
-Se un processo ha la necessità di accedere ad un servizio in kernel mode utilizza una **System Call**. Quindi il processo viene messo in pausa, viene eseguita dal kernel la funzione ad alti privilegi richiesta, infine il controllo viene ritornato al processo
+Se un processo ha la necessità di accedere ad un servizio in kernel mode utilizza una **System Call**. La **system Call** genera un'interrupt. Quindi il processo viene messo in pausa, viene eseguita dal kernel la funzione ad alti privilegi richiesta, infine il controllo viene ritornato al processo in user mode.
+
+
+#### Funzionalità offerte dal Sistema Operativo
+###### Gestione dei Processi
+- Creazione/Cancellazione
+- Sospensione/Ripristino
+- Meccanismi per la comunicazione tra processi
+- Meccanismi per la sincronizzazione tra processi
+- Gestione delle situazioni di stallo
+
+###### Gestione della Memoria Centrale
+- Tenere traccia di quali porzioni di memoria sono utilizzate e da quali processi sono utilizzate
+- Decidere quali processi o parti di processi e dati debbano essere caricati in memoria principali e quali possono essere spostati in memoria secondaria
+- Assegnare/Revocare spazio di memoria ai processi in base alle necessità
+
+###### Gestione della Memoria di Massa e dei File
+Le informazioni sono organizzate in **file**, che a loro volta sono organizzati nel file system. Il Sistema Operativo fornisce le funzionalità per la loro gestione
+- Creazione/Cancellazione, accesso ai file e alle directory
+- Associazione dei file ai dispositivi di memoria secondaria
+- Gestione dell'affidabilità (creazione di backup)
