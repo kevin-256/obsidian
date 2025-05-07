@@ -82,5 +82,12 @@ ogni processo consiste della sua imamgine, contesto di esecuzione, memoria, file
 
 
 ##### Modalità di funzionamento
-In presenza di più processi che condividono risorse è necessario che ogni processo non danneggi gli altri.
+Una volta tutti i programmi condividevano la stessa memoria e potevano leggerci e scriverci quindi quando la complessità dei programmi e la sicurezza cominciano a diventare un problema si è deciso di avere una piccola porzione di codice sicura e con dei privilegi elevati e trattare i programmi come delle sandbox lasciandogli solo un accesso parziale che viene colmato da un'interfaccia.
+Il kernel è la parte di codice sicura con i privilegi, il kernel ha più istruzioni a disposizione e può fare qualsiasi cosa sul sistema.
+Tutti i programmi eseguiti dall'utente sono eseguiti in una modalità della CPU dove la CPU e l'accessso alla memoria sono limitate. Questi programmi devono utilizzare delle istruzioni specifiche per trasferire il controllo al kernel e quest'ultimo eseguirà le istruzioni controllando i permessi eccetera.
+Questo porta a tre punti:
+- Sicurezza: i programmi non possono accedere a cose che non dovrebbero
+- Stabilità: isolando i programmi il kernel può gestire le risorse e terminare e pulire i programmi malfunzionantireddi
+- compatibilità: il kernel fornisce API stabili per i programmi (per esempio la funzione```CreateFile```), può cambiare il modo in cui la funzione agisce under the hood, senza che il programma lo noti
 Con questo proposito vengono introdotte due modalità di funzionamento, **user mode** e **kernel mode**
+
