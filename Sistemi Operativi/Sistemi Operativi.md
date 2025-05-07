@@ -1,0 +1,67 @@
+## Introduzione
+Un **sistema operativo** è un insieme di programmi che operano sull'hardware di un **sistema di calcolo**.
+**Sistema di calcolo**:
+- dispositivi fisici (hardware)
+- sistema operativo
+- programmi di sistema (fornisce un'interfaccia verso l'hardware)
+- programmi applicativi (applicazioni che risolvono problemi specifici)
+- utenti (qualsiasi agente che usa il sistema di calcolo per risolvere un problema)
+
+##### Sistema Operativo
+- Programma che permette di eseguire i programmi utente
+- Gestisce le risorse agli utilizzatori
+- sempre in esecuzione nel sistema di calcolo
+- viene chiamato Kernel
+
+#### Hardware
+La CPU e i device controller possono concorrere per l'utilizzo del bus e per l'accesso alla memoria tramite il bus.
+Un device controller gestisce uno specifico device e usa un buffer locale per leggere e scrivere i dati che poi serviranno alla CPU. La sincronizzazione per l'utilizzo del buffer avviene tramite gli **interrupts**.
+##### Interrupts
+il segnale di interrupt viene inviato dal controller -> la CPU intercetta il segnale e determina il tipo di interrupt ->la CPU invoca la procedura di servizio associata all'interrupt -> lo stato della CPU viene salvato e ripreistinato al termine della procedura
+normalmente si utilizza un vettore delle interruzioni
+
+##### Memoria
+Divisa in due parti:
+- **Memoria Principale** (Random Access Memory), unica memoria di grandi dimensioni accessibile dalla CPU, **Volatile**
+- **Memoria Secondaria** (Nastri, dischi, flash), compensa le limitazioni della memoria principale
+###### Gerarchia della memoria
+```
+  (Faster)
+  Registers
+	  |
+    Cache
+	  |
+ Main Memory
+	  |
+Electronic Disks
+	  |
+ Magnetic Disks
+	  |
+ Optical Disks
+	  |
+ Magnetic Tapes
+   (Slower)
+```
+
+##### DMA (Direct Memory Access)
+Le operazioni di accesso alla memoria da parte dei dispositivi di I/O vengono eseguite senza la CPU, ovvero il DMA controller ha il compito di trasferire i dati dal buffer del dispositivo I/O alla memoria centrale e viceversa. Al termine del trasferimento la CPU viene notificata dal DMA controller. Questa tecnica aumenta le prestazioni perché la CPU continua a lavorare durante il trasferimento dei dati.
+
+#### Sistema Operativo
+###### Sistemo operativio Monogrammato
+Oltre al Sistema Operativo in memoria risiede al più un programma, quindi il sitema esegue un lavoro alla volta ed il sistema operativo deve solamente gestire il trasferimento da un job al sucessivo.
+
+###### Sistemo operativio Multiprogrammato
+In memoria riesiedono **contemporaneamente** più programmi da eseguire, il sistema operativo può eseguire un altro job mentre quello che era in esecuzione termina oppure si mette in attesa di un evento "esterno" ad esempio I/O.
+
+##### Time Sharing
+Tecnica utilizzata dai sistemi operativi multiprogrammati:
+- i context switch tra job avvengono ad intervalli prestabiliti, non necessariamente in corrispondenza di operazioni di I/O
+- il tempo della CPU è suddivisa tra più job
+- i context switch fanno credere all'utente di utilizzare un sistema di calcolo dedicato solamente a lui
+Consideriamo tre job P1, P2 e P3 che utilizzano sia la CPU ma eseguono anche operazioni di I/O.
+![[Pasted image 20250507165000.png]]
+
+#### Processo
+Un programma in memoria predisposto all'esecuzione è chiamato **processo**
+- ogni utente può avere anche più di un processo contemporaneamente in memoria centrale
+- alcuni processi posso
