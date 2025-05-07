@@ -124,3 +124,13 @@ Le informazioni sono organizzate in **file**, che a loro volta sono organizzati 
 - Creazione/Cancellazione, accesso ai file e alle directory
 - Associazione dei file ai dispositivi di memoria secondaria
 - Gestione dell'affidabilità (creazione di backup)
+Inoltre per la memoria secondaria:
+- gestione dello spazioe libero
+- assegnazione dello spazio
+- scheduling del disco
+
+###### Gestione dell'Input/Output
+- gestire i buffer, zone di memoria utilizzate per scambiare dati con i dispositivi
+- gestire il caching, spostamento dei dati in memorie più veloci
+- gestire lo spooling, consentire l'esecuzione di processi e in contemporanea l'esecuzione di diverse operazioni di I/O
+Il Sistema operativo nasconde il funzionamento specifico dei dispositivi hardware e ne permette l'utilizzo tipo "API" tramite l'utilizzo dei device-driver
