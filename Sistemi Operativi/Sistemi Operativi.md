@@ -60,13 +60,18 @@ Tecnica utilizzata dai sistemi operativi multiprogrammati:
 - i context switch fanno credere all'utente di utilizzare un sistema di calcolo dedicato solamente a lui
 Consideriamo tre job P1, P2 e P3 che utilizzano sia la CPU ma eseguono anche operazioni di I/O.
 
-![](Github-repo/Sistemi%20Operativi/Images/ExecutionTypes.png)
-#### Processo (Job)
+![](Images/ExecutionTypes.png)
+#### Processo
 Un **processo** è un'attività unitaria di elaborazione, caratterizzata da un singolo **flusso sequenziale di esecuzione**, uno **stato corrente** ed una collezione di **risorse** assegnate dal sistema.
 
-- ogni utente può avere anche più di un processo contemporaneamente in memoria centrale
+- ogni utente può avere anche più di un job contemporaneamente in memoria centrale
 - quando la memoria centrale non è sufficiente, alcuni processi vengono spostati sulla memoria di massa:
 	- job pool, contenente processi che stanno eseguendo e i processi pronti all'esecuzione, ogni processo è visto come un blocco unico (non più utilizzata)
 	- swap, contentente parti di processi non più utilizzate chiamate pagine, ogni processo è suddiviso in pagine e alcune possono stare in memoria centrale e alcune in memoria di massa
 - Il sistema operativo sceglie quali processi caricare in memoria centrale (**job scheduling**)
 - il sistema operativo sceglie quale processo eseguire in memoria centrale (**CPU scheduling**)
+
+processo è un'entità del Sistema Operativo, un processo è l'istanza di un programma in esecuzione ed è l'unità minima di misura per le risorse,
+ogni processo consiste della sua imamgine, contesto di esecuzione, memoria, files...; etimológicamente un processo è l'insieme degli step che il processore deve eseguire. Il processo consiste in uno o più threads che è l'unità di misura dello scheduler.
+
+job è un'entità ad alto livello composta da più tasks, al giorno d'oggi job è un insieme di processi, mentre task indica un processo, un thread oppure un unità di lavoro eseguito dal processo o da un thread.
