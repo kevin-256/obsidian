@@ -96,6 +96,8 @@ Con questo proposito vengono introdotte due modalità di funzionamento, **user m
 | Spazio di indirizzamento virtuale privato alla quale altri processi in user mode non hanno accesso                    | Tutti i programmi che sono eseguiti in kernel mode hanno un unico spazio di indirizzamento virtuale                                                                                                                  |
 | Se un programma in esecuzione in user mode crasha non influisce sul funzionamento degli altri programmi in esecuzione | Se un programma o un driver crasha, tutto il sistema operativo crasha                                                                                                                                                |
 | Un programma in esecuzione in user mode non ha accesso ai dati del sistema operativo (memory, storage, devices...)    | Un programma o driver in kernel mode ha accesso a tutta la memoria quindi se scrivesse su un indirizzo di memoria sbagliato potrebbe compromettere la memoria del sistema operativo o di un altro programma o driver |
+
+
 Qui possiamo vedere la differenza in un'immagine dalla [guida della Microsoft]([User Mode and Kernel Mode - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode))
 
 ![](Images/UserMode_vs_KernelMode.png)
