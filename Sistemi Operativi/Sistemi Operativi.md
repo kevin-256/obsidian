@@ -133,4 +133,16 @@ Inoltre per la memoria secondaria:
 - gestire i buffer, zone di memoria utilizzate per scambiare dati con i dispositivi
 - gestire il caching, spostamento dei dati in memorie più veloci
 - gestire lo spooling, consentire l'esecuzione di processi e in contemporanea l'esecuzione di diverse operazioni di I/O
-Il Sistema operativo nasconde il funzionamento specifico dei dispositivi hardware e ne permette l'utilizzo tipo "API" tramite l'utilizzo dei device-driver
+Il Sistema operativo nasconde il funzionamento specifico dei dispositivi hardware e ne permette l'utilizzo tipo "API" tramite l'utilizzo dei device-driver.
+
+##### Protezione e Sicurezza
+Protezione: controllo dell'accesso alle risorse del sistema da parte dei processi e utenti
+Sicurezza: strategia di difesa delsistema da accessi o operazione dannose o distruttive (DOS, worm, virus, identity theft, theft of service....)
+
+Perché questo accada è necessario che il Sistema Operativo sia in grado di distinguere gli utilizzatori, vengono infatti utilizzati gli UID (User Id) e i GID (Group Id)
+
+Tra le proprietà che si vogliono garantire ci sono:
+- Disponibilità: protezione contro le interruzioni di funzionamento
+- Privatezza: assicurarsi che l'utente compia solamente accessi autorizzati ai dati e risorse
+- Integrità dei dati: protezione dei dati da mnodifiche non autorizzate o incontrollate
+- Autenticazione: gestione delle identità degli utenti e dell'autenticità dei loro dati e messaggi
