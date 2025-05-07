@@ -76,7 +76,11 @@ ogni processo consiste della sua imamgine, contesto di esecuzione, memoria, file
 
 **job** è un'entità ad alto livello composta da più tasks, al giorno d'oggi job è un insieme di processi, mentre task indica un processo, un thread oppure un unità di lavoro eseguito dal processo o da un thread.
 
-**Virtual Memory** è un layer di astrazione fornito ad ogni processo, ad esempio se il sistema ha 2GB di RAM fisica con indirizzi da 0 a 2GB, un processo potrebbe vedere uno spazio di indirizzamento di 4GB tutto per lui. La gestione degli indirizzi da virtuali a fisici è gestita dal MMU(Memory Management Unit) che è gestita dal sistema operativo, suddivisa in pagine di una dimensione prefissata.
+**Virtual Memory (Paging)** è un layer di astrazione fornito ad ogni processo, ad esempio se il sistema ha 2GB di RAM fisica con indirizzi da 0 a 2GB, un processo potrebbe vedere uno spazio di indirizzamento di 4GB tutto per lui. La gestione degli indirizzi da virtuali a fisici è gestita dal MMU(Memory Management Unit) che è gestita dal sistema operativo, suddivisa in pagine di una dimensione prefissata.
 
-**Swapping**:
+**Swapping** è il processo di spostare le pagine, dalla memoria centrale alla memoria di massa in un'area chiamata area di swap
 
+
+##### Modalità di funzionamento
+In presenza di più processi che condividono risorse è necessario che ogni processo non danneggi gli altri.
+Con questo proposito vengono introdotte due modalità di funzionamento, **user mode** e **kernel mode**
