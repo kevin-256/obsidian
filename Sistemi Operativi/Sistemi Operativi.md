@@ -91,3 +91,13 @@ Questo porta a tre punti:
 - compatibilità: il kernel fornisce API stabili per i programmi (per esempio la funzione```CreateFile```), può cambiare il modo in cui la funzione agisce under the hood, senza che il programma lo noti
 Con questo proposito vengono introdotte due modalità di funzionamento, **user mode** e **kernel mode**
 
+| User-Mode                                                                                                             | Kernel-Mode                                                                                                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spazio di indirizzamento virtuale privato alla quale altri processi in user mode non hanno accesso                    | Tutti i programmi che sono eseguiti in kernel mode hanno un unico spazio di indirizzamento virtuale                                                                                                                  |
+| Se un programma in esecuzione in user mode crasha non influisce sul funzionamento degli altri programmi in esecuzione | Se un programma o un driver crasha, tutto il sistema operativo crasha                                                                                                                                                |
+| Un programma in esecuzione in user mode non ha accesso ai dati del sistema operativo (memory, storage, devices...)    | Un programma o driver in kernel mode ha accesso a tutta la memoria quindi se scrivesse su un indirizzo di memoria sbagliato potrebbe compromettere la memoria del sistema operativo o di un altro programma o driver |
+Qui possiamo vedere la differenza in un'immagine dalla [guida della Microsoft]([User Mode and Kernel Mode - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode))
+
+![](Images/UserMode_vs_KernelMode.png)
+
+Se un processo ha la necessità di accedere ad un servizio in kernel mode utilizza una **System Call**. Quindi il processo viene messo in pausa, viene eseguita dal kernel la funzione ad alti privilegi richiesta, infine il controllo viene ritornato al processo
