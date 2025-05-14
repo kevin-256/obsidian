@@ -1,0 +1,1 @@
+Machine Learning is the ability to make a computer learn without being explicitly programmed
