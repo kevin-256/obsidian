@@ -25,3 +25,6 @@ In this process, the unsupervised problem is transformed into a supervised probl
 ![](Images/Self%20Supervised%20Learning.png)
 
 
+#### Reinforcement Learning
+Reinforcement learning is a method used to train AI agents to learn environment behavior in specific contexts using reward feedback policy.
+![](Images/Reinforcement%20Learning.png)
