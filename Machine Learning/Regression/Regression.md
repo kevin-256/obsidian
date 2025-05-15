@@ -12,6 +12,7 @@ y<sub>1</sub>,y<sub>2</sub>...y<sub>n</sub> = Target
 | Size in Feet<sup>2</sup>    | Price in $K              |
 | --------------------------- | ------------------------ |
 | 2104<br>1416<br>1534<br>852 | 460<br>232<br>315<br>178 |
+
 ![](Images/1.png)
 *h* = Hypothesis
 
@@ -40,3 +41,27 @@ Gradient Descent is an algorithm to minimize a function without calculating all 
 
 ![](Images/Gradient%20Descent%20Genereal%20Idea.png)
 
+For every Parameter we calculate the next value using the derivative and the cost function.
+
+![](Images/Gradient%20Descet%20formula.png)
+
+The idea is to calculate the derivative of the cost function on the point (θ<sub>0</sub>, θ<sub>1</sub>) so we can know the slope and go downhill with the minus. The **α** is the learning rate.
+
+From this image we can see a correct assignment of the learng rate.
+
+![](Images/Gradient%20Descent%20Working%20Correctly.png)
+
+From this image we can see a wrong assignment of the learning rate and we can see it because the algorithm is not converging into a point.
+
+![](Images/Gradient%20Descent%20Not%20Working.png)
+
+
+This is the formula for calculating the next step for one parameter, for the first parameter θ<sub>0</sub> the value of x<sub>0</sub><sup>(i)</sup> is 1.
+
+![](Images/Gradient%20Descent%20Next%20Step%20Formula.png)
+
+
+#### Feature Normalization
+The features should be on a similar scale so that the algorithm doesn't loose time going zig zagging but go in a straight line.
+
+![](Images/Gradient%20Descent%20Feature%20Normalization%20Scale.png)
