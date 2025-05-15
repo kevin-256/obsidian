@@ -65,3 +65,6 @@ This is the formula for calculating the next step for one parameter, for the fir
 The features should be on a similar scale so that the algorithm doesn't loose time going zig zagging but go in a straight line.
 
 ![](Images/Gradient%20Descent%20Feature%20Normalization%20Scale.png)
+
+
+We have two normalization 
