@@ -67,4 +67,48 @@ The features should be on a similar scale so that the algorithm doesn't loose ti
 ![](Images/Gradient%20Descent%20Feature%20Normalization%20Scale.png)
 
 
-We have two normalization 
+We have two types of normalization:
+- Mean normalization
+- MinMax normaliation
+
+
+**When using Normalization, apply the same model of normalization to training and test data with the μ/σ/min/max from the training dataset**
+
+
+we can see and exaple with this data
+
+![](Images/Normalization%20initial%20data.png)
+
+#### Mean Normalization
+It scale the data and moves into a range around 0, should be something between -1 and 1 but is not precise, it's only an approximation
+
+![](Images/Normalization%20mean%20data.png)
+
+x'<sub>1</sub> = (x<sub>1</sub>-μ<sub>1</sub>)/σ<sub>1</sub>
+
+
+
+#### MinMax Normalization
+It scale the data and moves into a range from 0 to 1, this scale the minimum value as 0 and maximum value as 1
+
+![](Images/Normalization%20minmax%20data.png)
+
+x'<sub>1</sub> = (x<sub>1</sub>-min(x<sub>1</sub>)) / (max(x<sub>1</sub>)-min(x<sub>1</sub>))
+
+
+##### Post Normalization
+After the normalization we have to use the same normalization model to scale back the predictions to the real value
+
+
+### Polynomial Regression
+We can have a not linear model but one more curvy, so instead of using only two parameters, one free and one tied to our feature, we tied other ones to the feature raised to a power
+h<sub>θ</sub> = θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + θ<sub>2</sub>x<sub>2</sub><sup>2</sup> + θ<sub>3</sub>x<sub>3</sub><sup>3</sup>
+
+When using normalization, the normalization model change so we need to recalculate them on the training dataset
+
+
+
+### Pearson Correlation Coefficient
+It's a value between -1 and 1 and it says how linearly dependent two variables are, the more distant from 0 the more linear dipendendt. The sign represent the direction, positive ascent, negative descent.
+
+![](Images/Pearson%20Correlation%20Coefficient.png)
