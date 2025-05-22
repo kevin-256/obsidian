@@ -19,7 +19,7 @@ y<sub>1</sub>,y<sub>2</sub>...y<sub>n</sub> = Target
 
 ## Linear Regression
 The house example is a linear regression with one variable:
-	h<sub>θ</sub>(x<sub>1</sub>) = θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub>
+	h<sub>θ</sub>(x<sub>1</sub>) = θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> = θ<sup>τ</sup>x
 we can represent this with two vectors:
 θ = \[ θ<sub>0</sub> θ<sub>1</sub> \]            x = \[ 1 x<sub>1</sub> \]
 
