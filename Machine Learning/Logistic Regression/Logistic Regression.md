@@ -17,4 +17,5 @@ h<sub>θ</sub>(x) < 0.5 --> 0
 
 *J*(θ<sub>0</sub>, θ<sub>1</sub>) is the **cost function** (squared error cost function) that tells how much off we are with the generated hypothesis with the current θ parameters.
 To get better hypothesis we have to minimize the value returned by this function by changing the θ parameters.
+
 ![](Images/Cost%20function.png)
