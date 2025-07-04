@@ -146,3 +146,55 @@ Tra le proprietà che si vogliono garantire ci sono:
 - Privatezza: assicurarsi che l'utente compia solamente accessi autorizzati ai dati e risorse
 - Integrità dei dati: protezione dei dati da mnodifiche non autorizzate o incontrollate
 - Autenticazione: gestione delle identità degli utenti e dell'autenticità dei loro dati e messaggi
+
+
+
+
+## Scheduling
+##### FCFS (First Come First Served)
+**Selezione:** Si utilizza (First In First Out), il primo che arriva viene servito per primo
+**Decisione:** non preemptive
+**Vantaggi:**
+	- semplice da implementare e senza overhead di gestione
+	- non c'è la starvation
+**Svantaggi:** 
+	- il tempo di attesa è legato all'ordine di arrivo dei burst
+	- il tempo di risposta può essere molto alto anche per il processi brevi
+	- un processo CPU-bound tende a monopolizzare la CPU
+
+![](Images/Scheduling%20FCFS.png)
+
+
+##### SJF (Shortest Job First)
+**Selezione:** si seleziona il processo che avrà il prossimo CPU-burst più breve
+**Decisione:** non preemptive
+
+![](Images/Scheduling%20SJF.png)
+
+
+##### SRTF (Shortest Remaining Time First)
+**Selezione:** variante con preemption di SJF
+	- si seleziona il processo che avrà il prossimo CPU-burst più breve
+	- se P1 è running e P2 arriva in coda di ready con durata inferiore al tempo restante di P1 allora P2 sottrae la CPU a P1
+**Decisione:** preemptive
+
+![](Images/Scheduling%20SRTF.png)
+
+##### SJF vs SRTF
+- i processi con CPU-burst più breve sopravanzano gli altri
+- SJF realizza il tempo di attesa medio migliore
+- può esistere la starvation per i processi con CPU-burst lungo
+- bisogna prevedere la durata dei CPU-burst
+- 
+
+##### SJF (Shortest Job First)
+**Selezione:** 
+**Decisione:** 
+**Vantaggi:**
+**Svantaggi:**
+
+
+
+
+
+##### Stima delle durate dei CPU-burst
