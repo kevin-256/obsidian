@@ -198,3 +198,7 @@ Tra le proprietà che si vogliono garantire ci sono:
 
 
 ##### Stima delle durate dei CPU-burst
+t<sub>n</sub> = durata ultimo CPU-burst
+τ<sub>n</sub> = contributo storia remota burst
+τ<sub>n+1</sub> = stima della durata del prossimo CPU-burst
+τ<sub>n+1</sub>=αt<sub>n</sub>+(1−α)τ<sub>n</sub>
