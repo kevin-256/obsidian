@@ -193,11 +193,26 @@ Tra le proprietà che si vogliono garantire ci sono:
 	R = (t<sub>a</sub>+t<sub>s</sub>)/t<sub>s</sub>
 	t<sub>a</sub> = tempo speso in attesa di ottenere la CPU
 	t<sub>s</sub> = durata prevista del CPU-burst
-**Decisione:** 
+**Decisione:** non preemptive
 **Vantaggi:**
+	- processi con CPU-burst brevi sono favoriti ma si tiene conto anche dell'età del processo
+	- è un meccanismo di aging: evita la starvation
 **Svantaggi:**
+	- bisogna prevedere la durata dei CPU-burst
 
 
+##### Stima delle durate dei CPU-burst
+t<sub>n</sub> = durata ultimo CPU-burst
+τ<sub>n</sub> = contributo storia remota burst
+τ<sub>n+1</sub> = stima della durata del prossimo CPU-burst
+τ<sub>n+1</sub>=αt<sub>n</sub>+(1−α)τ<sub>n</sub>
+
+
+##### Scheduling con Priorità
+**Selezione:** ad ogni processo viene assegnata una priorità, la CPU viene assegnata al processo ready con priorità più alta
+**Decisione:** non preemptive o preemptive (un processo ready con priorità più alta può prendersi la CPU)
+**Vantaggi:** 
+**Svantaggi:**
 ##### SJF (Shortest Job First)
 **Selezione:** 
 **Decisione:** 
@@ -208,8 +223,3 @@ Tra le proprietà che si vogliono garantire ci sono:
 
 
 
-##### Stima delle durate dei CPU-burst
-t<sub>n</sub> = durata ultimo CPU-burst
-τ<sub>n</sub> = contributo storia remota burst
-τ<sub>n+1</sub> = stima della durata del prossimo CPU-burst
-τ<sub>n+1</sub>=αt<sub>n</sub>+(1−α)τ<sub>n</sub>
