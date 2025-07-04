@@ -185,7 +185,18 @@ Tra le proprietà che si vogliono garantire ci sono:
 - SJF realizza il tempo di attesa medio migliore
 - può esistere la starvation per i processi con CPU-burst lungo
 - bisogna prevedere la durata dei CPU-burst
-- 
+
+
+
+##### HRRF (Highest Response Ratio First)
+**Selezione:** si seleziona il processo che ha il Response Ratio R maggiore,
+	R = (t<sub>a</sub>+t<sub>s</sub>)/t<sub>s</sub>
+	t<sub>a</sub> = tempo speso in attesa di ottenere la CPU
+	t<sub>s</sub> = durata prevista del CPU-burst
+**Decisione:** 
+**Vantaggi:**
+**Svantaggi:**
+
 
 ##### SJF (Shortest Job First)
 **Selezione:** 
