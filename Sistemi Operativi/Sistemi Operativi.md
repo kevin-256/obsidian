@@ -212,6 +212,7 @@ t<sub>n</sub> = durata ultimo CPU-burst
 ##### Scheduling con Priorità
 **Selezione:** ad ogni processo viene assegnata una priorità, la CPU viene assegnata al processo ready con priorità più alta
 **Decisione:** non preemptive o preemptive (un processo ready con priorità più alta può prendersi la CPU)
+
 ##### RR (Round Robin) (Scheduling circolare)
 **Selezione:** serve il processo che attende da più tempo
 **Decisione:** preemptive, però usa un timer che mette un processo in stato di ready da running
@@ -221,4 +222,4 @@ t<sub>n</sub> = durata ultimo CPU-burst
 ![](Images/Scheduling%20RR.png)
 
 
-
+##### Code Multiple con Retroazione
