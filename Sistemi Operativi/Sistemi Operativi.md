@@ -245,3 +245,23 @@ le attività di sitema sono affidate ad un unico processore, il **master server*
 ogni processore ha uno scheduler che preleva i processi dalla ready-queue che può essere:
 - di sistema: possibili race condition se più processori scelgono lo stesso task, serve mutua esclusione per l'accesso alla queue che può portare ad un bottleneck
 - per-processor: serve un meccaniscmo per distribuire il carico tra le queue
+
+Una CPU multicore ha più core nello stesso chip fisico
+Il sistema operativo vede ogni core come un processore logico separato
+Ogni core può eseguire più thread hardware contemporaneamente (Hyperthreading sulle CPU intel)
+La presenza di multithreading a livello di core comporta ad un doppio livello di scheduling:
+- scheduling software: assegnazione dei processi ai core
+- scheduling hardware: assegnazione dei thread di un processo ad un thread hardware all'interno del core
+
+In presenza di più core è necessario bilanciare in maniera equa il carico:
+- push mitigation: un processo dedicato controlla periodicamente il carico di lavoro assegnato ai core e se necessario sottrae task ai core overloaded e li riassegna ai core meno carichi.
+- pull mitigation: ogni cpu, quando è in idle, preleva un task da uno dei core overloaded
+
+#### NUMA e Scheduling
+- nelle architetture NUMA la CPU ha accesso veloce alla memoria locale e accesso lento (con più latenza) alla memoria remota di altre CPU.
+- lo scheduler deve privilegiare la memoria locale per avere meno latenza
+- però le tecniche di load-balancing potrebbero andare in contro a questa strategia
+
+#### Sistemi Real-Time
+Nei sistemi real-time bisogna rispettare delle deadline, quindi vengono utilizzati diversi algoritmi di scheduling
+
