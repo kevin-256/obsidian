@@ -264,4 +264,11 @@ In presenza di più core è necessario bilanciare in maniera equa il carico:
 
 #### Sistemi Real-Time
 Nei sistemi real-time bisogna rispettare delle deadline, quindi vengono utilizzati diversi algoritmi di scheduling
+ - real-time soft: le deadline si possono violare
+ - real-time hard: le deadline devono essere rispettate
+
+
+#### Scheduling O(1) di linux
+- utilizza preemption basato su priorità
+- 
 
