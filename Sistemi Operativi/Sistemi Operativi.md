@@ -232,3 +232,16 @@ Ci sono più code con una priorità diversa ciascuna, ogni coda può avere un al
 **vantaggi:**
 	- adatto ai sistemi multiutente
 	- può trattare diversamente i processi di diversi utenti (esempio root o utente normale)
+
+
+
+
+### Scheduling per Multiprocessori
+###### Multielaborazione asimmetrica:
+le attività di sitema sono affidate ad un unico processore, il **master server**
+- il codice degli utenti è eseguito dagli altri processori
+- difetto: il **master server** è un potenziale bottleneck del sistema
+###### Multielaborazione simmetrica:
+ogni processore ha uno scheduler che preleva i processi dalla ready-queue che può essere:
+- di sistema: possibili race condition se più processori scelgono lo stesso task, serve mutua esclusione per l'accesso alla queue che può portare ad un bottleneck
+- per-processor: serve un meccaniscmo per distribuire il carico tra le queue
