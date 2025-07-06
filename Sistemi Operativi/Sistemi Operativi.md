@@ -200,6 +200,7 @@ Tra le proprietà che si vogliono garantire ci sono:
 **Svantaggi:**
 	- bisogna prevedere la durata dei CPU-burst
 
+![](Images/Scheduling%20HRRF.png)
 
 ##### Stima delle durate dei CPU-burst
 t<sub>n</sub> = durata ultimo CPU-burst
@@ -211,15 +212,13 @@ t<sub>n</sub> = durata ultimo CPU-burst
 ##### Scheduling con Priorità
 **Selezione:** ad ogni processo viene assegnata una priorità, la CPU viene assegnata al processo ready con priorità più alta
 **Decisione:** non preemptive o preemptive (un processo ready con priorità più alta può prendersi la CPU)
-**Vantaggi:** 
-**Svantaggi:**
-##### SJF (Shortest Job First)
-**Selezione:** 
-**Decisione:** 
-**Vantaggi:**
-**Svantaggi:**
+##### RR (Round Robin) (Scheduling circolare)
+**Selezione:** serve il processo che attende da più tempo
+**Decisione:** preemptive, però usa un timer che mette un processo in stato di ready da running
+**vantaggi:** c'è una politica fair che evita la starvation
+**svantaggi:** i processi CPU-bound utilizzano mediamente tutto il quanto di tempo, effettivamente utilizzando quindi per più tempo la CPU rispetto ai processi I/O-bound
 
-
+![](Images/Scheduling%20RR.png)
 
 
 
