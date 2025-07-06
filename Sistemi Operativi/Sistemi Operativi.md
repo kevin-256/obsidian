@@ -223,3 +223,12 @@ t<sub>n</sub> = durata ultimo CPU-burst
 
 
 ##### Code Multiple con Retroazione
+Ci sono più code con una priorità diversa ciascuna, ogni coda può avere un algoritmo di scheduling proprio. Inoltre c'è un algoritmo di scheduling tra code, che preleva il processo con priorità più alta e lo porta in stato di running
+
+
+
+### Algoritmi che mirano all'equità di trattamento rispetto ai gruppi
+##### FSS (Fair Share Scheduling)
+**vantaggi:**
+	- adatto ai sistemi multiutente
+	- può trattare diversamente i processi di diversi utenti (esempio root o utente normale)
