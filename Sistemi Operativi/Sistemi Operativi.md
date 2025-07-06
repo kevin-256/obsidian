@@ -270,5 +270,5 @@ Nei sistemi real-time bisogna rispettare delle deadline, quindi vengono utilizza
 
 #### Scheduling O(1) di linux
 - utilizza preemption basato su priorità
-- 
-
+- la priorità è divisa in due parti, una **real-time** gestita staticamente (da 0 a 99) e una **nice** gestita dinamicamente (da 100 a 140)
+- la durata del quanto di tempo dipende dalla priorità, priorità alta tempo lungo e priorità bassa tempo corto
