@@ -9,7 +9,7 @@ Machine Learning Algorithms:
 A popular learning technique for training neural networks on labeled data for a specific task. You can think of supervised learning as a classroom where a student is taught by a teacher with many examples. 
 ![](Images/Supervised%20Learning.png)
 #### Classification
-A classification algorithm can generate a decision boundary that separate those positive and negative exaples we gave earlier. So if we give new data, the algorithm can decide of which of the class the new data is part of.
+A classification algorithm can generate a decision boundary that separate those positive and negative examples we gave earlier. So if we give new data, the algorithm can decide of which of the class the new data is part of.
 This algorithm is trained by some data and a label that classify this data into one of the two classes. (Example is a mail spam)
 #### Regression
 A regression algorithm can generate a value, a float, based on the input data.
