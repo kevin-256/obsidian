@@ -19,12 +19,12 @@ This algorithm is trained by giving some data as input and it returns a float as
 Unsupervised learning is a deep learning technique used to find implicit patterns in the data without being explicitly trained on labeled data.(Example subdividing google news based on similarity)
 ![](Images/Unsupervised%20Learning.png)
 
-## Self Supervised Learning
+#### Self Supervised Learning
 Self-supervised learning is a machine learning process where the model trains itself to learn one part of the input from another part of the input. It is also known as predictive or pretext learning.
 In this process, the unsupervised problem is transformed into a supervised problem by auto-generating the labels.
 ![](Images/Self%20Supervised%20Learning.png)
 
 
-#### Reinforcement Learning
+## Reinforcement Learning
 Reinforcement learning is a method used to train AI agents to learn environment behavior in specific contexts using reward feedback policy.
 ![](Images/Reinforcement%20Learning.png)
