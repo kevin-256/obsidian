@@ -13,7 +13,7 @@ A classification algorithm can generate a decision boundary that separate those 
 This algorithm is trained by some data and a label that classify this data into one of the two classes. (Example is a mail spam)
 #### Regression
 A regression algorithm can generate a value, a float, based on the input data.
-This algorithm is trained by giving some data as input and it returns a float as output. (Example hose price prediction based on size)
+This algorithm is trained by giving some data as input and it returns a float as output. (Example house price prediction based on size)
 
 #### Unsupervised Learning
 Unsupervised learning is a deep learning technique used to find implicit patterns in the data without being explicitly trained on labeled data.(Example subdividing google news based on similarity)
