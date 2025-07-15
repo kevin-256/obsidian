@@ -11,12 +11,12 @@ g(z) = 1/(1+e<sup>-z</sup>) = 1/(1+e<sup>-θ<sup>τ</sup>x</sup>)
 
 ![](Images/Sigmoid%20function.png)
 
-This function maps any real number to the range (0, 1) so to get a discrete 0 or 1 classification we map the output of the hypothesis function, with a linear decision boundary, as follows:
+This function maps any real number to the range (0, 1) so to get a discrete 0 or 1 classification we map the output of the hypothesis function, with a **linear decision boundary**, as follows:
 h<sub>θ</sub>(x) >= 0.5 --> 1
 h<sub>θ</sub>(x) < 0.5 --> 0
 
 *J*(θ<sub>0</sub>, θ<sub>1</sub>) is the **cost function** (squared error cost function) that tells how much off we are with the generated hypothesis with the current θ parameters.
-To get better hypothesis we have to minimize the value returned by this function by changing the θ parameters. We need that this function i  convex and derivable respect to θ in order to solve the minimization problem using Gradient descent.
+To get better hypothesis we have to minimize the value returned by this function by changing the θ parameters. We need that this function is convex and derivable respect to θ in order to solve the minimization problem using Gradient descent.
 
 ![](Images/Cost%20function.png)
 
