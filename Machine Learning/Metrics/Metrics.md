@@ -13,3 +13,5 @@ False Negative -> Prediction false and it's wrong
 (TP+TN)/(FP+FN+TP+TN)
 
 **Prediction** is 
+
+Recall watch only the 
