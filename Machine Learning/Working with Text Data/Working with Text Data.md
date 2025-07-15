@@ -10,3 +10,8 @@ Each word is added to a vector, representing our vocabolary, so each word gets a
 For each phrase that we want represent, we can use a vector the same size as our "vocabolary" and for each word keep the count of how many times it appears inside the phrase.
 
 ### TF-IDF
+TF-IDF = tf * idf
+###### tf (Term Frequency)
+for each phrase is the times a word occurs inside the phrase over the total word count of the phrase (is a float between 0 and 1)
+###### idf (inverse document frequecy)
+is the logarithm of the total number of documents over the number of documents that have that word
