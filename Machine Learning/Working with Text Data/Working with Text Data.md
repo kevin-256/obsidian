@@ -22,3 +22,4 @@ Each word is added to a vector like in Integer version, but this time each word 
 
 ### Basic Word Representations – Word Embedding
 Each word is represented as a vector, that is in a lower-dimensional space than the bag of words
+for example for a food we can add three axes, dessertness, sandwichness and liquidness, for each food we can set a three values array with the three coordinates in space of that food.
