@@ -24,3 +24,13 @@ when the target should be one, the first part of the formula became != 0 and the
 <span style="color:green">y = -log(x)</span>
 <span style="color:red">y = -log(1-x)</span>
 ![](Images/Logarithms.png)
+
+#### Decision Boundary
+This is for a liner decision boundary
+	h<sub>θ</sub>(x)=0.5 -> θ<sup>τ</sup>x=0
+	h<sub>θ</sub>(x)>0.5 when θ<sup>τ</sup>x>0
+The decision boundary could be a function that is not linear but the things above works
+
+#### Multiclass Classification
+When we have more than two classes we make more classifiers, on for each class and we train him for a specific class.
+![](Images/Multiclass.png)
