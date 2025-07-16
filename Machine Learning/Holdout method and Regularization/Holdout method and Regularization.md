@@ -13,7 +13,7 @@ Addressing overfitting:
 - Reducing number of features manually or with amodel selection algorithm like PCA
 - Regularization keeping
 
-
+##### Regularization: Ridge regression
 
 #### Underfitting
 creating a model with poor predictive ability because the model hasn't fully captured the complexity of the training data
