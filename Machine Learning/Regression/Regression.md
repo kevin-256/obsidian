@@ -1,5 +1,5 @@
 A regression algorithm can generate a value, a float, based on the input data.
-This algorithm is trained by giving some data as input and it returns a float as output. (Example hose price prediction based on size)
+This algorithm is trained by giving some data as input and it returns a float as output. (Example house price prediction based on size)
 
 Regression uses **Supervised Learning** as training algorithm to predict a **target** (output) starting from one or more **features** (input)
 
