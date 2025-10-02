@@ -6,4 +6,9 @@ A network is a collection of indipentents nodes that exchange informations betwe
 - link -> connection between two nodes
 - node
 - topology of the connection
-- 
+	- point to point (between two nodes)
+	- multiple access (there is a shared medium where multiple nodes can access it at the same time)
+
+### Terminology
+- switched network:
+	There are some special nodes that enable communication between the network 
