@@ -27,6 +27,12 @@ i concetti importanti sono:
 
 ### Classificazioni
 (Kaplan & Haenlein, 2010)
-divise in 2 dimensioni:
+6 categorie basate su 2 dimensioni(assi):
 - social presence/media richness: quanto sembra che l'utente sia effettivamente lì
 - self presentation/self disclosure: quanto si rivela di sé stessi
+![](Kaplan%20&%20Haenlein%20clasificazione.png)
+
+(Kietzmann et al., 2011)
+Modello ad alveare formato da 7 dimensioni:
+- identità -> quanto un utente racconta di se stesso nel social media
+![](Images/Honeycomb%20Model%20Kietzmann.png)
