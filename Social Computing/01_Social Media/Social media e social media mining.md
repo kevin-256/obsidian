@@ -43,3 +43,17 @@ Modello ad alveare formato da 7 dimensioni:
 - sharing -> quanto gli utenti possono scambiarsi contenuti
 ![](Images/Honeycomb%20Model%20Kietzmann.png)
 
+### Confronto
+Il modello ad alveare è sicuramente più avanzato, ci sono infatti delle somiglianze:
+- Identity ~ Self Presentation
+- Presence ~ Social Presence
+
+### Offline vs Online
+
+| Caratteristiche   | Offline Social Network                                                                                                                            | Online Social Network                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Degree centrality | Il numero di legami gestibili è limitato a 150 (secondo Dunbar 2003), la maggioranza delle persone afferma che ha tra i 14 e i 56 legami in media | Il numero di legami online è illimitato, ma in media è: 395 su Facebook, 149 su Linkedin, 150-250 su Twitter |
+| Symmetric         | Normalmente è simmetrico (se io sono tuo amico tu sei mio amico)                                                                                  | Possono essere simmetrici e asimmetrici (tipico su facebook io seguo qualcuno ma lui non mi segue)           |
+| Affect            | Legami positivi, amici (92-97 %)<br>Legami negativi, nemici (3-8 %)                                                                               | I legami negativi sono molto bassi, posso bloccare qualcuno se proprio non voglio averci a che fare          |
+| Strength          | 2-8 legami forti/stretti (in media)<br>12-48 legami più deboli (in media)                                                                         | 9-37 legami forti/stretti (in media)<br>68-131 legami più deboli (in media)                                  |
+|                   |                                                                                                                                                   |                                                                                                              |
