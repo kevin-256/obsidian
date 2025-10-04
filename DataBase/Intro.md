@@ -9,3 +9,16 @@ Tratti che contraddistinguono una base di dati da altro software:
 - efficacia(convenienza)
 
 ### Perché introdurre un Database e non usare il file system?
+- usando il filesystem introdurremo sicuramente della ridondanza che può portare ad un'inconsistenza dei dati, a volte la ridondanza viene utilizzata nelle basi di dati nelle viste tipo e usando trigger per tenerle aggiornate
+- difficoltà di accesso ai dati
+- disomogeneità dei dati
+- problemi di integritò dei dati
+- non atomicità delle operazioni di accesso ai dati
+- un accesso concorrente ai dati
+- problemi di sicurezza/protezioni dei dati(non tutti possono vedere tutti e non tutti possono modificare tutto)
+
+### Cos'è una base di dati?
+I **dati** sono quelli nudi e crudi registrati nel sistema
+Le **informazioni** sono le cose che vengono codificate tramite i dati e sono quelle che uno cerca quando interroga una base di dati
+
+Un **DBMS** è una collezione di file interconnessi e insieme di programmi che consentono di accedere e modificare tali file. In pratica è un layer di astrazione che nasconde come vengono salvate le informazioni nei file e ci fornisce dei metodi per accedervi e modificarli.
