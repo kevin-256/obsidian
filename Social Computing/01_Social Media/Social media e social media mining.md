@@ -34,5 +34,12 @@ i concetti importanti sono:
 
 (Kietzmann et al., 2011)
 Modello ad alveare formato da 7 dimensioni:
-- identità -> quanto un utente racconta di se stesso nel social media
+- identity -> quanto un utente racconta di se stesso nel social media
+- presence -> quanto gli utenti sanno che gli altri utenti sono online
+- releationship -> quanto gli utenti possono mettersi in relazione con gli altri utenti
+- reputation -> quanto si sa dello stato sociale degli altri utenti(esempio se si sa che una persona è importante)
+- groups -> quanto gli utenti possono formare una comunità
+- conversations -> quanto gli utenti possono comunicare con gli altri(commenti, reply a commenti, messaggi....)
+- sharing -> quanto gli utenti possono scambiarsi contenuti
 ![](Images/Honeycomb%20Model%20Kietzmann.png)
+
