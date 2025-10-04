@@ -7,7 +7,7 @@ Crowdsourcing
 ![](Images/Social%20Computing%20diagramma.png)
 
 ### Social Media (prima parte)
-I social media sono molto importanti per la scienza dei dati perché forniscono molti dati e alcune dinamiche molto utili (esempio se un post è una fake news quanti utenti ha raggiunto in un intervallo di tempo mentre se non è una fake news quanti ne ha raggiunti nella stessa quantità di tempo)
+I social media sono molto importanti per la scienza dei dati perché forniscono molti dati e alcune dinamiche molto utili (esempio se un post è una fake news quanti utenti ha raggiunto in un intervallo di tempo mentre se non è una fake news quanti ne ha raggiunti nella stessa quantità di tempo). Questi social media noi li vediamo come grafo di nodi connessi e non connessi
 ### Crowdsourcing (seconda parte)
 - ci sono compiti in cui gli umani hanno prestazioni migliori delle macchine (es ~~etichettatura immagini~~, ~~comprensione scrittura~~, fact-checking,...)
 - il machine learning ha bisogno di dati di training generati da umani
