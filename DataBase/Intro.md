@@ -22,3 +22,12 @@ I **dati** sono quelli nudi e crudi registrati nel sistema
 Le **informazioni** sono le cose che vengono codificate tramite i dati e sono quelle che uno cerca quando interroga una base di dati
 
 Un **DBMS** è una collezione di file interconnessi e insieme di programmi che consentono di accedere e modificare tali file. In pratica è un layer di astrazione che nasconde come vengono salvate le informazioni nei file e ci fornisce dei metodi per accedervi e modificarli.
+
+Le basi di dati supportano astrazioni sui dati. I livelli di astrazione sono:
+- livello fisico -> vede file e programmi che operano sui file
+- livello logico/concettuale -> modello relazionale e modello entità-relazione
+- livello delle viste -> (non è un livello di astrazione) sono dei ritagli della base di dati che possono essere dovuti a permessi
+
+### Modello dei dati
+
+Un **modello dei dati** è una collezione di strumenti per descrivere i dati, le loro relazioni e i vincoli di consistenza sui dati.
