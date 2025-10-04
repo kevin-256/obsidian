@@ -9,5 +9,5 @@ Negli anni 2000 non è più confinata solamente al computer ma diventa parte di 
 L'importanza dell'interazione uomo-macchina diventa sempre più importante anche perché i metodi di interazione con i dispositivi che sembravano consolidati vengono modificati, come il mouse che viene affiancato dal touch per i dispositivi mobile. L'usabilità dell'utilizzo è anche un fattore che ne migliora il commercio
 
 L'usabilità è solo uno strato della HCI:
-![](Images/Usabilita%20e%20user%20experience.png)
+![](00_Intro/Images/Usabilita%20e%20user%20experience.png)
 
