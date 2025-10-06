@@ -58,3 +58,32 @@ Una componente di un grafo è un sottografo connesso e massimale(se aggiungo alt
 - fortemente connessa: per ogni coppia di nodi u, v c’è un cammino diretto da u a v
 - debolmente connessa: per ogni coppia di nodi u, v c’è un cammino **in**diretto da u a v
 una componente fortemente connessa è allo stesso tempo debolmente connessa
+
+### Grado
+il grado di un nodo è  il numero di archi collegati a quel nodo
+Nei grafi diretti
+- in-degree -> archi che entrano nel nodo
+- out-degree -> archi che escono nel nodo
+
+### Sequenza dei Gradi
+**Sequenza di gradi**, per ogni nodo, che grado ha
+### Distribuzione dei Gradi (Degree Distribution)
+**Degree distribution**, per ogni grado ci dice quanti nodi hanno quel grado
+- "Distribuzione di frequenza dei gradi"
+	- frequenza assoluta
+	- frequenza relativa (nodi con quella frequenza diviso nodi totali,  la somma delle frequenze relative deve dare 1)
+
+
+**Theorema**: La sommatoria dei gradi in un grado indiretto è due volte il numero degli archi
+**Corollari**
+- il numero di nodi con grado dispari è pari
+- in ogni grafo diretto la somma degli in-degree è  uguale alla somma degli out-degree
+
+
+### Grafico della degree distribution
+- asse delle x rappresenta il grado
+- asse delle y rappresenta la frazione(relativa) o il numero(assoluta) dei nodi che hanno quel grado
+- spesso su scala log-log
+- sui social media, di solito decrescente
+	- tanti profili utente conn poche connessioni 
+	- alcuni utenti con tante connessioni
